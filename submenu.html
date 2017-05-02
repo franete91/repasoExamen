@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<style>
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+      body {
+        background-color: pink;
+        margin-top: 20%;
+      }
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:500px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:coral;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+      
+h1{
+    text-align: center;
+    background-color: yellow;
+    border: 5px black solid;
+    font-size: 40px;
+    color: black;
+    margin-right: 230px;
+    margin-left: 143px;
+}
+
+.dni{
+    font-size: 150px;
+    opacity: 0.25;
+    transform: rotate(-25deg);
+    transform-origin: 1000px;
+    z-index: -1;
+    margin-left: 200px;
+    position: fixed;
+}
+			
+		</style>
+	</head>
+	<body>
+
+<div class="dni">49038783T</div>
+
+    <h1>EJERCICIO REPASO</h1>
+	<h1>PRUEBA</h1>
+
+
+    
+		<div id="header">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul class="nav">
+					<li><a href="">Presentacion</a>
+          <ul>
+            <li><a href="Paginas/quienes.html">¿Quienes Somos?</a></li>
+          </ul>
+
+					<li><a href="">Servicios</a>
+						<ul>
+							<li><a href="">Submenu1</a></li>
+							<li><a href="">Submenu2</a></li>
+							<li><a href="">Submenu3</a></li>
+							<li><a href="">Submenu4</a>
+								<ul>
+									<li><a href="">Submenu1</a></li>
+									<li><a href="">Submenu2</a></li>
+									<li><a href="">Submenu3</a></li>
+									<li><a href="">Submenu4</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Acerca de</a>
+						<ul>
+							<li><a href="">Submenu1</a></li>
+							<li><a href="">Submenu2</a></li>
+							<li><a href="">Submenu3</a></li>
+							<li><a href="">Submenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="">Contacto</a></li>
+				</ul>
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		</div>
+	</body>
+</html>
